@@ -1,0 +1,96 @@
+\documentclass{article}
+\newcommand{\version}{\textbf{v0.0 - Template}}
+% This document is prepared and maintained by the Roman 
+% HLIS Cosmology PIT team.
+
+% Document settings 
+\usepackage[english]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{natbib,aas_macros}  % https://ui.adsabs.harvard.edu/help/actions/journal-macros
+
+% Packages
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{paralist}
+\usepackage{lipsum}
+
+% Custom commands
+\newcommand{\pipecal}{{\tt Pipe.M1}}
+\newcommand{\pipeid}{{\tt Pipe.M2}}
+\newcommand{\pipepz}{{\tt Pipe.M3}}
+\newcommand{\pipesample}{{\tt Pipe.M4}}
+\newcommand{\pipestats}{{\tt Pipe.M5}}
+\newcommand{\pipecluster}{{\tt Pipe.M6}}
+\newcommand{\pipecpip}{{\tt Pipe.I1}}
+\newcommand{\pipecshear}{{\tt Pipe.I2}}
+\newcommand{\pipetxt}{{\tt Pipe.I3}}
+\newcommand{\pipeclinf}{{\tt Pipe.I4}}
+\newcommand{\pipeadvinf}{{\tt Pipe.I5}}
+\newcommand{\Sim}{{\tt Sim}}
+\renewcommand{\Roman}{Roman}  
+
+\title{Roman HLIS Cosmology PIT\\
+Template Document}
+\author{\it Document owner: \it Dida Markovi\v{c}}
+\date{\today\\ \version} % See the top of the document for version definition
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{About this document}
+
+\subsection{Purpose}
+
+This document is a template for the \href{https://roman-hlis-cosmology.caltech.edu/}{Roman High-latitude Imaging Survey's Cosmology Project Infrastructure Team} whose work plan is described in our proposal \citep{proposal}. 
+
+\subsection{Scope}
+
+This document can be used as a template for team documents or papers. Feel free to do with it as you please! 
+
+\subsection{Approach aka Instructions}
+
+This is a \TeX\ document owned by the Roman HLIS PIT Pipeline Manager team. It is mirrored as a repository in \href{https://github.com/Roman-HLIS-Cosmology-PIT}{our GitHub Organisation}'s repo in order to facilitate history tracking as well as local editing. It is also a document in Overleaf, which mirrors the GitHub repo.
+
+It is recommended that documents larger than a couple of pages are split into auxiliary files (nicely organised into folders if needed) and that the \texttt{main.tex} file does not contain any or much content text - but that it is reserved mostly for the introductory text (aka this) and \texttt{input} statements. This is especially useful for documents on which many people are collaborating. Read \href{https://www.overleaf.com/learn/latex/Management_in_a_large_project}{more about this on the Overleaf documentation}, if you are interested.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Common Acronyms}
+%% PLEASE ADD ALPHABETICALLY IF NEEDED
+
+\begin{itemize}
+    \item[HLIS] High-latitude Imaging Survey
+    \item[PIT] Project Infrastructure Team
+    \item[PY] Project Year
+    \item[FTE] Full-time equivalent
+    \item[WY] Work-year
+    \item[PI] Pricipal Investogator
+    \item[PM] Pipeline Manager
+    \item[SCM] Shear and Clustering Measurement
+    \item[CPIP] Cosmological Parameter Inference Pipeline (aka) Cosmological Inference
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Example Section from Input Auxiliary File}
+\label{sec:eg}
+\input{example-folder/example-auxiliary-file.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

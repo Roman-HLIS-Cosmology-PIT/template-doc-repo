@@ -1,0 +1,15 @@
+# Roman HLIS Cosmology PIT LaTeX .gitignore
+*.DS_Store
+*.aux
+*.log
+*.out
+*.pdf
+*.ps
+*.dvi
+*.bst
+*.bbl
+*.blg
+*.idx
+*.toc
+*.synctex.gz
+*.tex.backup
